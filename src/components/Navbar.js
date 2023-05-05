@@ -14,7 +14,7 @@ const Navbar = () => {
         <h3>Where in the world?</h3>
         </div>
         <div className="dark-mode">
-         <ReactSwitch  onChange={toggletheme}  checked={theme === "dark"} />
+         <ReactSwitch className="ReactSwitch" onChange={toggletheme}  checked={theme === "dark"} />
         </div>
     </NavContainer>
   );

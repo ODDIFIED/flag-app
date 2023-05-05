@@ -1,5 +1,6 @@
 import Content from "./Content"
 import Navbar from "./Navbar"
+import FlagHolder from "./FlagHolder"
 import FlagContext from "../Context/FlagContext";
 import { useContext } from "react";
 
@@ -10,6 +11,7 @@ import { useContext } from "react";
         < div id={theme} >
          <Navbar />
          <Content />
+         <FlagHolder />
         </div>
     )
  }

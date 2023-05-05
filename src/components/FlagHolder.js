@@ -1,7 +1,6 @@
 import { useContext } from "react"
 import FlagContext from "../Context/FlagContext"
 import FlagCard from "./FlagCard"
-import SearchBar from "./SearchBar"
 import { FlagContainer } from "./styles"
 
 
