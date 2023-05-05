@@ -29,10 +29,7 @@ export const NavContainer = styled.div`
     margin: 5px auto;
     padding: 15px 40px;
   }
-  .dark-mode{
-    font-size: 2px;
-    border: 1px solid red;
-  }
+ 
 `;
 
 export const ContentContainer = styled.div`
