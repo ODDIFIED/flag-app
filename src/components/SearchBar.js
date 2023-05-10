@@ -45,7 +45,7 @@ const SearchBar = () => {
       </form>
 
       <form  >
-        <select   onClick={SelectHandler}  onChange={(e) => setRegionName(e.target.value)}>
+        <select   onClick={SelectHandler} value={regionName} onChange={(e) => setRegionName(e.target.value)}>
           <option>Filter By Region</option>
           <option value="Africa">Africa</option>
           <option    value="America">America</option>

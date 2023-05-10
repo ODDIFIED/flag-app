@@ -46,3 +46,28 @@
   border: 1px solid white;
 }
 
+
+
+/* styling for pagination */
+.paginationBttn{
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.paginationBttn a{
+  padding: 5px;
+  border: 1px solid black;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.paginationBttn a:hover{
+  color: white;
+  background-color: black;
+
+}
+.paginationActive a{
+  color: white;
+  background-color: black;
+}

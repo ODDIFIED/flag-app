@@ -19,11 +19,11 @@ export const FlagProvider = ({ children }) => {
 
 
   // setTheme((curr)=>(curr === "light" ? "dark" : "light"))
-
   useEffect(() => {
     const loadPost = async () => {
       const res = await axios.get("https://restcountries.com/v3.1/all");
       setloadFlag(res.data);
+      console.log(res.data)
     };
     loadPost();
   }, []);

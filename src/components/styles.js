@@ -1,3 +1,4 @@
+import { findAllByPlaceholderText } from "@testing-library/react";
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
@@ -83,6 +84,7 @@ export const FlagContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 20px auto;
+    justify-content: center;
   padding: 10px 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -98,7 +100,9 @@ export const FlagContainer = styled.div`
     border-top-left-radius: 10px;
     height: 40vh;
   }
+  
 
+  
   @media screen and (max-width: 900px) {
   max-width: 900px;
     grid-template-columns: repeat(3, 1fr);
@@ -207,12 +211,12 @@ export const DetailsCon = styled.div`
     margin-top: 5px;
     h4 {
       padding-bottom: 2px;
-      font-size: 20px;
+      font-size: 15px;
     }
 
     li {
       text-decoration: none;
-      font-size: 15px;
+      font-size: 12px;
       padding-bottom: 1px;
       list-style: none;
     }
@@ -224,7 +228,7 @@ export const DetailsCon = styled.div`
     }
     li {
       text-decoration: none;
-      font-size: 11px;
+      font-size: 12px;
       padding-bottom: 3px;
       list-style: none;
     }
