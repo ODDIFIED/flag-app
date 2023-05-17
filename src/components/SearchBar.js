@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useContext, useState } from "react";
+import {AiOutlineSearch} from "react-icons/ai";
 import FlagContext from "../Context/FlagContext";
 
 const SearchBar = () => {
@@ -11,14 +12,9 @@ const SearchBar = () => {
   const searchCountry = async () => {
     const res = await axios.get(`https://restcountries.com/v3.1/name/${input}`);
     setloadFlag(res.data);
-    console.log(res.data);
-  };
+    
+  };searchCountry()
 
-  const submitHandler = (e) =>{
-    e.preventDefault()
-
-    searchCountry();
-  };
 
 
 
@@ -34,19 +30,16 @@ const SearchBar = () => {
  
   return (
     <div className="search-menu">
-      <form onSubmit={submitHandler}>
         <input
           type={"text"}
           value={input}
-          required
           placeholder="Search for a country"
-          onChange={(e) => setInput(e.target.value)}
-        />
-      </form>
+          onChange={(e) => setInput(e.target.value.toLowerCase(""))}
+          />
 
       <form  >
         <select   onClick={SelectHandler} value={regionName} onChange={(e) => setRegionName(e.target.value)}>
-          <option>Filter By Region</option>
+          <option value="all">Filter By Region</option>
           <option value="Africa">Africa</option>
           <option    value="America">America</option>
           <option   value="Asia">Asia</option>

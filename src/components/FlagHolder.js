@@ -32,7 +32,7 @@ const FlagHolder = () => {
       {/* call the funtion that map through */}
       {displayFlags}
     </FlagContainer>
-    <ReactPaginate  
+    <ReactPaginate 
         previousLabel={"Previous"}
         nextLabel={"Next"}
         pageCount={pageCount}

@@ -8,7 +8,7 @@ import { useContext } from "react";
  const Home = () =>{
   const {theme} = useContext (FlagContext)
     return(
-        < div id={theme} >
+        < div  id={theme} >
          <Navbar />
          <Content />
          <FlagHolder />

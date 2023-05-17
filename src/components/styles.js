@@ -4,9 +4,9 @@ import styled from "styled-components";
 export const NavContainer = styled.div`
   border: 2px solid ghostwhite;
   width: 100%;
-  max-width: 1200px;
-  margin: 5px auto;
-  padding: 15px 70px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 15px 110px;
   border-left: 0px;
   border-top: 0px;
   border-right: 0px;
@@ -90,15 +90,17 @@ export const FlagContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 
+
   .Card-holder {
     border: 1px solid ghostwhite;
     width: 70%;
+    height: 90%;
     margin: auto;
     margin-bottom: 30px;
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    height: 40vh;
+
   }
   
 
@@ -121,20 +123,22 @@ export const FlagContainer = styled.div`
 export const FlagImgCon = styled.div`
   height: 50%;
 
+  
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    object-fit: cover;
-  }
+    
+
+   }
 
  
   
 `;
 export const SingImgCon = styled.div`
   height: 100%;
- 
   img {
     width: 80%;
     height: 40vh;

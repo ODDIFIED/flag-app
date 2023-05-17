@@ -1,4 +1,3 @@
-import { BsMoon } from "react-icons/bs";
 import { NavContainer } from "./styles";
 import React, { useContext, useState } from 'react';
 import ReactSwitch from "react-switch";
@@ -14,7 +13,7 @@ const Navbar = () => {
         <h3>Where in the world?</h3>
         </div>
         <div className="dark-mode">
-         <ReactSwitch className="ReactSwitch" onChange={toggletheme}  checked={theme === "dark"} />
+         <ReactSwitch className="ReactSwitch" size={'25px'} onChange={toggletheme}  checked={theme === "dark"} />
         </div>
     </NavContainer>
   );
